@@ -1,0 +1,31 @@
+version: "3.1"
+
+rules:
+  - rule: Greet user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Respond to payment question
+    steps:
+      - intent: ask_payment
+      - action: utter_ask_payment
+
+  - rule: Respond to working hours
+    steps:
+      - intent: ask_hours
+      - action: utter_ask_hours
+
+  - rule: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Respond to bot challenge
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+  - rule: Handle FAQ question
+    steps:
+      - intent: faq_question
+      - action: action_faq_answer

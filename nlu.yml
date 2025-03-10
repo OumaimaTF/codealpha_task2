@@ -1,0 +1,43 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hello
+      - hi
+      - hey
+      - good morning
+      - good evening
+
+  - intent: ask_payment
+    examples: |
+      - Can I pay with a credit card?
+      - What payment methods do you accept?
+      - Do you accept PayPal?
+
+  - intent: ask_hours
+    examples: |
+      - What are your working hours?
+      - When are you open?
+      - Are you open on weekends?
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - see you later
+      - goodbye
+      - take care
+
+  - intent: bot_challenge
+    examples: |
+      - Are you a bot?
+      - Are you real?
+      - Who are you?
+      - What is your role?
+      - Are you an AI?
+
+  - intent: faq_question
+    examples: |
+      - How do I contact support?
+      - What is your return policy?
+      - Do you offer discounts?

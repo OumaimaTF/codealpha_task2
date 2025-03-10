@@ -1,0 +1,27 @@
+version: "3.1"
+
+stories:
+  - story: Greet the user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: Answer payment questions
+    steps:
+      - intent: ask_payment
+      - action: utter_ask_payment
+
+  - story: Answer business hours
+    steps:
+      - intent: ask_hours
+      - action: utter_ask_hours
+
+  - story: Handle bot challenge
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  - story: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye

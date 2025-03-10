@@ -1,0 +1,30 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_payment
+  - ask_hours
+  - goodbye
+  - faq_question
+  - bot_challenge
+
+entities:
+  - question
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I help you?"
+  utter_ask_payment:
+    - text: "We accept credit cards and PayPal."
+  utter_ask_hours:
+    - text: "We are open from 9 AM to 6 PM."
+  utter_goodbye:
+    - text: "Goodbye! Have a nice day!"
+  utter_faq_answer:
+    - text: "I found an answer to your question."
+  utter_iamabot:
+    - text: "I am a bot, how can I help you today?"
+
+actions:
+  - action_faq_answer
+  - utter_iamabot
